@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Batu Outbound</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .blog-header {
+            padding: 150px 5% 80px;
+            background: var(--dark);
+            color: white;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: -50px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .blog-info {
+            padding: 30px;
+        }
+
+        .blog-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .blog-info p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .btn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        @media (max-width: 480px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="scrolled">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Batu Outbound Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://wa.me/628123456789" class="btn-cta">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <h1>Wawasan & Tips Outbound</h1>
+        <p>Temukan inspirasi untuk kegiatan tim Anda selanjutnya.</p>
+    </header>
+
+    <section class="section-padding container">
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <img src="assets/img/blog_1.jpg" alt="Sunrise Batu" class="blog-img">
+                <div class="blog-info">
+                    <h3>5 Destinasi Outbound Terbaik di Batu Malang</h3>
+                    <p>Batu memiliki beragam pilihan lokasi outbound mulai dari pegunungan hingga taman rekreasi
+                        modern...</p>
+                    <a href="blog/destinasi-outbound-batu.html" class="btn-more">Baca Selengkapnya <span
+                            class="material-icons">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1526726538690-5cbf95642eeb?auto=format&fit=crop&w=800&q=80"
+                    alt="Team Building" class="blog-img">
+                <div class="blog-info">
+                    <h3>Pentingnya Team Building untuk Karyawan Perusahaan</h3>
+                    <p>Mengapa perusahaan besar rutin melakukan outbound? Temukan alasannya di sini dan manfaat jangka
+                        panjangnya...</p>
+                    <a href="blog/pentingnya-team-building.html" class="btn-more">Baca Selengkapnya <span
+                            class="material-icons">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=800&q=80"
+                    alt="Adventure" class="blog-img">
+                <div class="blog-info">
+                    <h3>Tips Mempersiapkan Diri untuk Kegiatan Outbound</h3>
+                    <p>Jangan sampai salah kostum! Berikut adalah daftar perlengkapan yang wajib Anda bawa saat kegiatan
+                        di alam...</p>
+                    <a href="blog/tips-persiapan-outbound.html" class="btn-more">Baca Selengkapnya <span
+                            class="material-icons">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1533512930330-4ac257c86793?auto=format&fit=crop&w=800&q=80"
+                    alt="Batu Hills" class="blog-img">
+                <div class="blog-info">
+                    <h3>Manfaat Outbound untuk Perkembangan Karakter Anak</h3>
+                    <p>Outbound bukan hanya untuk orang dewasa. Anak-anak pun bisa belajar kemandirian melalui permainan
+                        outdoor...</p>
+                    <a href="blog/outbound-untuk-anak.html" class="btn-more">Baca Selengkapnya <span
+                            class="material-icons">arrow_forward</span></a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?auto=format&fit=crop&w=800&q=80"
+                    alt="Fun" class="blog-img">
+                <div class="blog-info">
+                    <h3>Rekomendasi Menu Makan Siang Saat Outbound</h3>
+                    <p>Setelah lelah beraktivitas, menu makan siang yang tepat akan mengembalikan energi tim Anda...</p>
+                    <a href="blog/menu-makan-siang-outbound.html" class="btn-more">Baca Selengkapnya <span
+                            class="material-icons">arrow_forward</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <img src="assets/img/logo.png" alt="Batu Outbound">
+                <p>Provider outbound terpercaya di Kota Wisata Batu. Menciptakan momen berharga melalui petualangan.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>Jl. Raya Batu No. 123, Malang</li>
+                    <li>+62 812 3456 789</li>
+                    <li>info@batuoutbound.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Batu Outbound. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="floating-controls">
+        <a href="https://wa.me/628123456789" class="wa-float" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30" alt="WA">
+        </a>
+        <div class="scroll-top">
+            <span class="material-icons">expand_less</span>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
